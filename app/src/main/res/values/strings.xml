@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Aplikasi Story App</string>
+    <string name="package_name">com.ditooard.aplikasistoryapp</string>
+
+    <string name="bottomTvSplash">Created by Bangkit Mobile Development Cohort</string>
+
+    <string name="email">Input Your Email</string>
+    <string name="pass">Input Your Password</string>
+    <string name="login">Login</string>
+    <string name="register">Dont have an account? Register</string>
+    <string name="loginIcon">hanya dekorasi login</string>
+    <string name="login_desc">Holla, this is Bangkit StoryApp !</string>
+
+    <string name="reg">Registrasi</string>
+    <string name="newStory">Silakan isi formulir di bawah untuk membuat akun baru.</string>
+
+
+    <string name="postButton">Bagikan Story</string>
+    <string name="post">Bagikan Story Sebagai </string>
+    <string name="storyDesc">Masukan Detail Story</string>
+    <string name="kamera">Kamera</string>
+    <string name="galeri">Galeri</string>
+
+    <string name="konten">Gambar ini adalah bagian dari cerita</string>
+    <string name="stempelWaktu">Mei 29, 2024, 10:57:12</string>
+
+    <string name="daftar">Daftar</string>
+    <string name="nameUser">Nama</string>
+    <string name="mailUser">Email</string>
+    <string name="passUser">Password</string>
+    <string name="confirmPassUser">Konfirmasi Password</string>
+    <string name="scrollView">Untuk menggulir item</string>
+    <string name="imageStoryDesc">Ini berisi gambar dari cerita</string>
+    <string name="waktuStory">Cerita dibuat pada:</string>
+
+    <string name="dataKosong">Tidak ada data ditemukan</string>
+    <string name="imageDataNone">Ditampilkan ketika tidak ada data</string>
+    <string name="btnFloating">untuk membuat konten baru</string>
+
+    <string name="takenMail">Email yang anda masukkan sudah terdaftar, silahkan ganti email anda</string>
+    <string name="wrongMailFormat">Format email salah</string>
+    <string name="passwordNotMatch">Kata sandi tidak cocok</string>
+    <string name="noName">Nama tidak boleh kosong</string>
+    <string name="lessPass">Kata sandi minimal harus 8 karakter</string>
+    <string name="noEmail">Email tidak boleh kosong</string>
+    <string name="noPass">Kata sandi tidak boleh kosong</string>
+    <string name="loginInvalid">Masukkan data akun Anda dengan benar!</string>
+    <string name="createAccount">Buat Akun</string>
+    <string name="noConfirmPass">Konfirmasi kata sandi tidak boleh kosong</string>
+    <string name="error_load">Gagal memuat data. Pesan eror:</string>
+    <string name="SuccessLogout">Berhasil logout</string>
+    <string name="warningAddImage">Unggah foto terlebih dahulu</string>
+    <string name="warningAddDescription">Tambahkan deskripsi terlebih dahulu</string>
+
+    <string name="home">Halaman Utama</string>
+    <string name="logout">Log Out</string>
+    <string name="logoutDescription">Apakah Anda yakin ingin logout?</string>
+    <string name="cancelLogout">Batalkan</string>
+    <string name="logoutButton">Log Out</string>
+    <string name="detail_title">%1$s\'s Story</string>
+    <string name="post_users">Buat cerita baru</string>
+    <string name="post_as">Bagikan cerita sebagai </string>
+
+
+    <string name="choose_picture">Pilih Gambar</string>
+    <string name="message">Pesan  :</string>
+    <string name="refresh">Menyegarkan</string>
+    <string name="changeLanguage">Ganti BAHASA</string>
+
+</resources>

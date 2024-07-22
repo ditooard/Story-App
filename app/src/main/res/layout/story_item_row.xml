@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemStory"
+            type="com.ditooard.aplikasistoryapp.ui.register.DetailStory" />
+
+        <import type="com.ditooard.aplikasistoryapp.adapter.StoryListAdapter" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/storyCV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/storyImage"
+                    android:layout_width="371dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/konten"
+                    android:scaleType="centerCrop"
+                    app:loadImage='@{itemStory.photoUrl}'
+                    tools:srcCompat="@drawable/blank_photo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/storyAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text='@{itemStory.name}'
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/storyCV"
+                app:layout_constraintStart_toStartOf="@+id/storyCV"
+                app:layout_constraintTop_toBottomOf="@+id/storyCV"
+                tools:text="@string/nameUser" />
+
+            <TextView
+                android:id="@+id/storyDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text='@{StoryListAdapter.convertDateToFormattedString(itemStory.createdAt)}'
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="@+id/storyAuthor"
+                app:layout_constraintStart_toStartOf="@+id/storyAuthor"
+                app:layout_constraintTop_toBottomOf="@+id/storyAuthor"
+                tools:text="@string/stempelWaktu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
